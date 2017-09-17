@@ -1,0 +1,568 @@
+{% extends 'base.html' %}
+{% block title %}
+    首页
+{% endblock %}
+{% block content %}
+    <section id="profile" class="item noprint">
+        <h2 class="item-title"><span class="title">个人资料</span> <span class="icon-user"></span></h2>
+
+        <div class="item-cont clearfix">
+            <div class="hidden">
+                <div class="col500 clearfix fl-left">
+                    <div class="profile-img"><img src="/static/images/user_images/profile-img.jpg" alt=""/></div>
+                    <div class="profile-info">
+                        <h3>I'm England Developer and Business Lady :)</h3>
+                        <p>Im Graphic designer and occasional author who specialises in designing
+                            brand identities. People hire me because I help make their businesses
+                            more profitable.</p>
+                        <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                    </div>
+                </div>
+
+                <div class="col260 fl-right">
+                    <ul class="profile-data">
+                        <li><h4>姓名</h4>
+                            <div>Eason</div>
+                        </li>
+                        <li><h4>年龄</h4>
+                            <div>25</div>
+                        </li>
+                        <li><h4>地址</h4>
+                            <div>中国 北京 东城区</div>
+                        </li>
+                        <li><h4>邮箱</h4>
+                            <div>eason@xuepy.com</div>
+                        </li>
+                        <li><h4>手机</h4>
+                            <div>18514588335</div>
+                        </li>
+                        <li><h4>在职状态</h4>
+                            <div>在职</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a class="blog-link" href="blog.html">
+                <span class="icon"></span>
+                <span class="label">博客</span>
+            </a>
+        </div>
+        <div id="profile-brd" class="item-border"><span><span></span></span></div>
+    </section><!-- /#profile -->
+
+    <section id="resume" class="item">
+        <h2 class="item-title toggle noprint closed"><span class="title">简历</span> <span
+                class="icon-resume"></span><span
+                class="arrow"></span></h2>
+
+        <div class="item-cont clearfix">
+            <div class="col500 fl-left">
+                <div class="resume-category">
+                    <h3 class="resume-category-title clearfix">教育经历 <span class="icon-plus"></span></h3>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2006 - 2007</div>
+                            <h4 class="resume-post-title">Viena Programming School</h4>
+                            <h5 class="resume-post-subtitle">PHP Computer School</h5>
+                            <div class="resume-post-cont">
+                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2007 - 2011</div>
+                            <h4 class="resume-post-title">Web Design University</h4>
+                            <h5 class="resume-post-subtitle">MTI University</h5>
+                            <div class="resume-post-cont">
+                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-category">
+                    <h3 class="resume-category-title clearfix">专业经历 <span class="icon-plus"></span></h3>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2012 - Present</div>
+                            <h4 class="resume-post-title">Senior Web Designer</h4>
+                            <h5 class="resume-post-subtitle">Company Name</h5>
+                            <div class="resume-post-cont">
+                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2010 - 2012</div>
+                            <h4 class="resume-post-title">Senior Web Designer</h4>
+                            <h5 class="resume-post-subtitle">Company Name</h5>
+                            <div class="resume-post-cont">
+                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-post">
+                        <div class="resume-post-body">
+                            <div class="resume-post-date">2009 - 2010</div>
+                            <h4 class="resume-post-title">Senior Web Designer</h4>
+                            <h5 class="resume-post-subtitle">Company Name</h5>
+                            <div class="resume-post-cont">
+                                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                    laudantium, totam rem aperiam, eaque ipsa quae.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-btns noprint" id="resume-btns">
+                    <a target="_blank" href="resume.pdf" class="btn"><i class="icon-cloud"></i>下载简历</a>
+                    <a id="printBtn" onclick="window.print();return false;" target="_blank" href="#" class="btn"><i
+                            class="icon-print"></i>打印简历</a>
+                </div>
+            </div>
+
+            <div class="col260 fl-right noprint">
+                <div class="resume-sidebar">
+                    <aside class="skill-box">
+                        <h3>前端技能</h3>
+
+                        <div class="textwidget">
+                            <div class="skill-row">
+                                <h4 class="skill-title">HTML 5</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="70"></span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <h4 class="skill-title">CSS 3</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="50"></span>
+                                    <span class="skill-percent">50%</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <h4 class="skill-title">JQUERY</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="85"></span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <h4 class="skill-title">Bootstrap</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="75"></span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="skill-box">
+                        <h3>开发技能</h3>
+
+                        <div class="textwidget">
+                            <div class="skill-row">
+                                <h4 class="skill-title">Python</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="70"></span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <h4 class="skill-title">SQL</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="50"></span>
+                                    <span class="skill-percent">50%</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <h4 class="skill-title">Flask</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="85"></span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <h4 class="skill-title">Django</h4>
+                                <div class="skill-data">
+                                    <span class="skill-percent-line" data-width="75"></span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <aside class="skill-box">
+                        <h3>语言水平</h3>
+
+                        <div class="textwidget">
+                            <aside class="skill-language">
+                                <div class="skill-row clearfix">
+                                    <h4 class="skill-title clearfix"><img src="/static/images/en.png"
+                                                                          alt=""/><span>ENGLISH</span></h4>
+                                    <div class="skill-data skill5"></div>
+                                </div>
+                            </aside>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-border"><span></span></div>
+    </section><!-- /#resume -->
+
+    <section id="portfolio" class="item noprint">
+        <h2 class="item-title toggle closed"><span class="title">作品</span> <span class="icon-portfolio"></span>
+            <span class="arrow"></span></h2>
+
+        <div class="item-cont">
+            <div class="controls">
+                <ul>
+                    <li class="filter active" data-filter="all">所有</li>
+                    <li class="filter" data-filter="category_19">前端设计</li>
+                    <li class="filter" data-filter="category_20">网站开发</li>
+                    <li class="filter" data-filter="category_18">Web Design</li>
+                </ul>
+            </div>
+
+            <ul id="Grid">
+                <li class="mix mix_all category_18" data-cat="18">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a id="fancyboxvideo" href="http://vimeo.com/9532951">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/1-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Very Beautiful Girl</h2>
+                                    <span>Web Design</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_18" data-cat="18">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy2">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/2-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Businessman</h2>
+                                    <span>Web Design</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy2" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/2.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Businessman</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_19" data-cat="19">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy3">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/3-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Red Children&#39;s Bicycle</h2>
+                                    <span>Branding</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy3" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/3.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Red Children&#39;s Bicycle</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_18" data-cat="18">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy4">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/4-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Awesome Workplace</h2>
+                                    <span>Web Design</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy4" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/4.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Awesome Workplace</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_20" data-cat="20">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy5">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/5-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Cool Place</h2>
+                                    <span>Photography</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy5" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/5.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Cool Place</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_19" data-cat="19">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy6">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/6-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Old Bridge</h2>
+                                    <span>Branding</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy6" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/6.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Old Bridge</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_20" data-cat="20">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy7">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/7-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Business Meeting</h2>
+                                    <span>Photography</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy7" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/7.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Business Meeting</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_20" data-cat="20">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy8">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/8-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Beautiful Girl</h2>
+                                    <span>Photography</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy8" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/8.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Beautiful Girl</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mix mix_all category_19" data-cat="19">
+                    <div class="ptf-item" data-itemid="328" data-type="fullslider" data-defwidth="350">
+                        <a class="fancybox" data-rel="group" href="#fancy9">
+                            <div class="ptf-img-wrap">
+                                <img src="/static/images/user_images/gallery/9-250x180.jpg" alt=""/>
+                            </div>
+                            <div class="ptf-cover">
+                                <div class="ptf-button"><span>View Large</span></div>
+                                <div class="ptf-details">
+                                    <h2>Awesome Workplace</h2>
+                                    <span>Branding</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div id="fancy9" class="fancy-wrap">
+                            <img src="/static/images/user_images/gallery/9.jpg" alt=""/>
+                            <div class="fancy">
+                                <h2>Awesome Workplace</h2>
+                                <p>Perspiciatis unde omnis iste
+                                    natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                                    aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta.</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="item-border"><span></span></div>
+    </section><!-- /#portfolio -->
+
+    <section id="contact" class="item noprint">
+        <h2 class="item-title toggle closed"><span class="title">联系信息</span> <span class="icon-contact"></span><span
+                class="arrow"></span></h2>
+
+        <div class="item-cont">
+            <div class="map">
+                <div id="map-canvas"></div>
+            </div>
+
+            <div class="clearfix">
+                <div class="form col500 fl-left">
+                    <h3>在线留言</h3>
+
+                    <form action="#" method="get" id="contact_form">
+                        <div class="clearfix">
+                            <div class="form-col form-marg small fl-left">
+                                <label>姓名<span>*</span></label>
+                                <div class="field"><input class="form-item req" id="contact_name"
+                                                          name="contact_name" type="text"></div>
+                            </div>
+                            <div class="form-col small fl-left">
+                                <label>邮箱<span>*</span></label>
+                                <div class="field"><input class="form-item req" name="email" id="email"
+                                                          type="email"></div>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label>消息<span>*</span></label>
+                            <textarea id="comment" name="comment" class="form-item req"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <div class="field"><input class="btn" name="submit" id="submit" value="提交留言"
+                                                      type="submit"></div>
+                        </div>
+                    </form>
+                    <div id="messages">&nbsp;</div>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function () {
+                            jQuery('#contact_form').ajaxForm({
+                                beforeSubmit: function () {
+                                    return init_validation('#contact_form');
+                                },
+                                success: function () {
+                                    alert('Your message has been sent!');
+                                    jQuery('#contact_form').resetForm();
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+
+                <div class="col260 fl-right">
+                    <h3>联系信息</h3>
+                    <ul class="contact-info">
+                        <li class="icon-home clearfix"><span class="icon"></span>
+                            <span class="text">中国 北京 东城区</span>
+                        </li>
+                        <li class="icon-phone clearfix"><span class="icon"></span>
+                            <span class="text">185 145 88335</span>
+                        </li>
+                        <li class="icon-maile clearfix"><span class="icon"></span>
+                            <span class="text">eason@xuepy.com</span>
+                        </li>
+                        <li class="icon-world clearfix"><span class="icon"></span>
+                            <span class="text"><a href="http://www.xuepy.com">http://www.xuepy.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="item-border"><span></span></div>
+    </section><!-- /#contact -->
+{% endblock %}
