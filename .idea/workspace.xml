@@ -2,220 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0625bad6-19a1-4aaf-8010-7128a82ece4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg1-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg10-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg11-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg12-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg2-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg3-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg4-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg5-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg6-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg7-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg8-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg9-small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/arrows@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/03AE91.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/03ae91@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/197BBF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/197bbf@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/27CCC0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/27ccc0@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/35BB2E.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/35bb2e@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/53b7f9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/53b7f9@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/704F36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/704f36@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/976AD8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/976ad8@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/C7DF2E.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/DF5085.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/E35039.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/EA3302.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/F9C100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/FF3500.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/FF6800.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/c7df2e@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/df5085@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/e35039@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/ea3302@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/f9c100@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/ff3500@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/check/ff6800@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icon-comments.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icon-comments@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-contact.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-contact@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-plus@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-share@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-social.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/icons-social@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/03AE91.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/03ae91@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/197BBF.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/197bbf@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/27CCC0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/27ccc0@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/35BB2E.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/35bb2e@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/53b7f9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/53b7f9@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/704F36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/704f36@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/976AD8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/976ad8@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/C7DF2E.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/DF5085.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/E35039.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/EA3302.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/F9C100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/FF3500.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/FF6800.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/c7df2e@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/df5085@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/e35039@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/ea3302@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/f9c100@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/ff3500@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/quote/ff6800@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/03ae91-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/03ae91.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/197bbf-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/197bbf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/27ccc0-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/27ccc0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/35bb2e-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/35bb2e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/53b7f9-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/53b7f9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/704f36-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/704f36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/976ad8-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/976ad8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/c7df2e-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/c7df2e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/df5085-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/df5085.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/e35039-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/e35039.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/ea3302-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/ea3302.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/f9c100-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/f9c100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/ff3500-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/ff3500.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/ff6800-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/color_theme/skills/ff6800.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/en.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/feather.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/feather@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/fr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/gr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-comment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-plus@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-print.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/icon-reply.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/item-border-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/mail@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/picture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/picture@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/player/controls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/slider-prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/1-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/2-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/3-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/4-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/5-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/6-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/7-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/8-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/9-250x180.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/gallery/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/media/AirReview-Landmarks-02-ChasingCorporate.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/posts/11-534x249.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/posts/31-534x249.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/posts/51-534x249.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/posts/post-1-534x249.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/user_images/profile-img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/vcard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/vcard@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/fancybox/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/fancybox/fancybox_loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/fancybox/fancybox_sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/bigplay.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/controls.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/guestbook/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/color_cheme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/settings_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/skin_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/style-print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg13-small.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg13.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg14-small.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/bg/bg14.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/images/close.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/detect_mobilebrowser_and_ipad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/fancybox/jquery.fancybox.pack8cbb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/fancybox/jquery.fancybox8cbb.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/fancybox/jquery.mousewheel-3.0.6.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.cookies.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.mixitup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/jquery.slides.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/bigplay.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/controls.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/mediaelement-and-player.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/mediaelement/mediaelementplayer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vcard/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guestbook/admin.py" afterPath="$PROJECT_DIR$/guestbook/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guestbook/models.py" afterPath="$PROJECT_DIR$/guestbook/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vcard/settings.py" afterPath="$PROJECT_DIR$/vcard/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guestbook/views.py" afterPath="$PROJECT_DIR$/guestbook/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vcard/urls.py" afterPath="$PROJECT_DIR$/vcard/urls.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -255,7 +45,7 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vcard/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3444">
+            <state relative-caret-position="0">
               <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
@@ -286,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vcard/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="700">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
               </folding>
@@ -301,8 +91,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2830">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="521" column="46" lean-forward="true" selection-start-line="521" selection-start-column="46" selection-end-line="521" selection-end-column="46" />
               <folding>
                 <element signature="e#2241#11413#0#HTML" expanded="false" />
                 <element signature="e#11436#25690#0#HTML" expanded="false" />
@@ -311,12 +101,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="392">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guestbook/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -344,11 +146,12 @@
       <list>
         <option value="$PROJECT_DIR$/guestbook/admin.py" />
         <option value="$PROJECT_DIR$/guestbook/models.py" />
-        <option value="$PROJECT_DIR$/vcard/urls.py" />
         <option value="$PROJECT_DIR$/vcard/views.py" />
         <option value="$PROJECT_DIR$/vcard/settings.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/guestbook/views.py" />
+        <option value="$PROJECT_DIR$/vcard/urls.py" />
       </list>
     </option>
   </component>
@@ -387,6 +190,11 @@
             <path>
               <item name="vcard" type="b2602c69:ProjectViewProjectNode" />
               <item name="vcard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vcard" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vcard" type="462c0819:PsiDirectoryNode" />
+              <item name="guestbook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vcard" type="b2602c69:ProjectViewProjectNode" />
@@ -471,6 +279,14 @@
       <option name="presentableId" value="Default" />
       <updated>1505649236681</updated>
     </task>
+    <task id="LOCAL-00001" summary="vcard 准备工作  静态文件网页模板添加">
+      <created>1505687936921</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1505687936921</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -507,6 +323,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="vcard 准备工作  静态文件网页模板添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="vcard 准备工作  静态文件网页模板添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -560,13 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0aceea83-32c1-4afd-b126-98cd55e0e1b4/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -578,6 +391,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -585,16 +401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vcard/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -610,7 +417,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vcard/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3444">
+        <state relative-caret-position="0">
           <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
           <folding />
         </state>
@@ -648,10 +455,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2830">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="521" column="46" lean-forward="true" selection-start-line="521" selection-start-column="46" selection-end-line="521" selection-end-column="46" />
           <folding>
             <element signature="e#2241#11413#0#HTML" expanded="false" />
             <element signature="e#11436#25690#0#HTML" expanded="false" />
@@ -659,11 +491,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/guestbook/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="532">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vcard/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
