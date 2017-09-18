@@ -24,7 +24,7 @@ class Post(models.Model):
     slug = models.SlugField('URL缩写', max_length=100, unique_for_date='publish')
     category = models.ForeignKey(Category, related_name='blog_posts')
     author = models.ForeignKey(User, related_name='blog_posts')
-    image = models.ImageField('图片')
+    image = models.ImageField('图片', null=True, blank=True, upload_to='uploads')
     body = models.TextField('正文')
     publish = models.DateTimeField('发布时间', default=timezone.now)
     created = models.DateTimeField('创建时间', auto_now_add=True)
