@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+{% block content %}
+    <section id="profile" class="item">
+        <h2 class="item-title"><a href="index-2.html"><span class="title">个人资料</span><span class="icon-user"></span></a>
+        </h2>
+        <div class="item-border"><span></span></div>
+    </section><!-- /#profile -->
+
+    <section id="post" class="item">
+        <h2 class="item-title"><a href="#"><span class="title">日志正文</span> <span class="icon-blog"></span></a></h2>
+
+        <div class="item-cont clearfix">
+            <div class="col535 fl-left">
+                <h2 class="post-title">{{ post.title }}</h2>
+                <div class="post-info">
+                    作者 <a href="#">{{ post.author.username }}</a> 于 <a href="#">{{ post.publish|date }}发布于</a>
+                    <a href="#">{{ post.category.name }}</a>
+                    <a href="#" class="comments-link">{{ post.comments.count }} 条评论</a>
+                </div>
+
+                <div class="post-cont wp-cont">
+                    {% if post.image %}
+                        <div class="entry-photo"><img src="/static/images/user_images/posts/post-1-534x249.jpg" alt=""/>
+                        </div>
+                    {% endif %}
+                    {{ post.body }}
+                </div>
+
+                <div class="post-bottom clearfix">
+                    <div class="post-tags"><span>Tags:</span> <a href="#">news</a> <a href="#">creative</a></div>
+                    <div class="post-share">
+                        <span>Share:</span>
+                        <a target="_blank" href="http://twitter.com/" class="share-tw" title="Twitter">&nbsp;</a>
+                        <a target="_blank" href="http://www.facebook.com/" class="share-fb" title="Facebook">&nbsp;</a>
+                        <a target="_blank" href="http://pinterest.com/" class="share-p" title="Pinterest">&nbsp;</a>
+                        <a target="_blank" class="share-in" href="http://www.linkedin.com/" title="Linkedin">&nbsp;</a>
+                    </div>
+                </div>
+
+                <div class="post-comments">
+                    <div id="respond" class="section block_leave_comments form no_comments">
+                        <h3>Leave a Comment</h3>
+                        <a id="cancel-comment-reply-link" href="#" style="display:none;">cancel reply</a>
+                        <form action="http://vcard-html.royalmasters.net/post" method="post">
+                            <div class="form-col form-marg small fl-left">
+                                <label>Name<span>*</span></label>
+                                <input name="author" id="author" size="22" tabindex="1" aria-required="true"
+                                       class="input-name form-item" type="text">
+                            </div>
+                            <div class="form-col small fl-left">
+                                <label>Email<span>*</span></label>
+                                <input name="email" id="email" size="22" tabindex="2" aria-required="true"
+                                       class="input-email form-item" type="text">
+                            </div>
+                            <div class="form-col">
+                                <label>Message<span>*</span></label>
+                                <textarea name="comment" id="comment" cols="39" rows="4" tabindex="4"
+                                          aria-required="true" class="textarea-comment form-item"></textarea>
+                            </div>
+                            <div id="comment-submit" class="form-btn">
+                                <div class="button">
+                                    <input name="submit" id="submit" tabindex="5" value="Leave a Comment"
+                                           class="comment-submit general_button default btn" type="submit">
+                                </div>
+                                <input name="comment_post_ID" value="68" id="comment_post_ID" type="hidden">
+                                <input name="comment_parent" id="comment_parent" value="0" type="hidden">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col230 fl-right">
+                <aside id="sidebar">
+                    <div class="widget">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="#" title="View all posts filed under Audio">Audio</a></li>
+                            <li><a href="#" title="View all posts filed under Creative">Creative</a></li>
+                            <li><a href="#" title="View all posts filed under My Posts">My Posts</a></li>
+                            <li><a href="#" title="View all posts filed under Text Only">Text Only</a></li>
+                            <li><a href="#" title="View all posts filed under Video">Video</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <h2>Recent Posts</h2>
+                        <ul>
+                            <li><a href="#">Image Post Format</a></li>
+                            <li><a href="#">Text Post Format</a></li>
+                            <li><a href="#">Gallery Post</a></li>
+                            <li><a href="#">Audio Post Format</a></li>
+                            <li><a href="#">Video Post</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <h2>Tags</h2>
+                        <div class="tagcloud">
+                            <a href="#" title="audio">audio</a>
+                            <a href="#" title="creative">creative</a>
+                            <a href="#" title="gallery">gallery</a>
+                            <a href="#" title="image">image</a>
+                            <a href="#" title="news">news</a>
+                            <a href="#" title="photography">photography</a>
+                            <a href="#" title="popular">popular</a>
+                            <a href="#" title="text">text</a>
+                            <a href="#" title="vimeo">vimeo</a>
+                            <a href="#" title="youtube">youtube</a>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h2>Archives</h2>
+                        <ul>
+                            <li><a href="#">December 2013</a></li>
+                            <li><a href="#">November 2013</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <h2>Meta</h2>
+                        <ul>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#" title="Syndicate this site using RSS 2.0">Entries <abbr
+                                    title="Really Simple Syndication">RSS</abbr></a></li>
+                            <li><a href="#" title="The latest comments to all posts in RSS">Comments <abbr
+                                    title="Really Simple Syndication">RSS</abbr></a></li>
+                            <li><a href="#"
+                                   title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+        <div class="item-border"><span></span></div>
+    </section><!-- /#post -->
+{% endblock %}

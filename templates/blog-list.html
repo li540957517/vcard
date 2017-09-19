@@ -4,204 +4,44 @@
 {% endblock %}
 {% block content %}
                 <section id="profile" class="item">
-                    <h2 class="item-title"><a href="/"><span class="title">my Profile</span><span class="icon-user"></span></a></h2>
+                    <h2 class="item-title"><a href="/"><span class="title">个人资料</span><span class="icon-user"></span></a></h2>
                     <div class="item-border"><span></span></div>
                 </section><!-- /#profile -->
 
                 <section id="blog" class="item">
-                    <h2 class="item-title"><a href="http://vcard.royalmasters.net/blog"><span class="title">my blog Posts</span> <span class="icon-blog"></span></a></h2>
+                    <h2 class="item-title"><a href="#"><span class="title">日志列表</span> <span class="icon-blog"></span></a></h2>
 
                     <div class="item-cont clearfix">
 
                         <div class="col535 fl-left">
+                            {% for post in posts %}
                             <article class="entry-box">
                                 <header class="entry-header">
-                                    <h2 class="post-title"><a href="blog-post.html">Image Post Format</a></h2>
+                                    <h2 class="post-title"><a href="{% url 'blog:blog_detail' post.slug %}">{{ post.title }}</a></h2>
                                     <div class="post-info">
-                                        Posted by <a href="#" title="Posts by admin" rel="author">admin</a> in
-                                        <a href="#" title="View all posts in Creative" rel="category tag">Creative</a>
+                                        由 <a href="#" title="Posts by admin" rel="author">{{ post.author.username }}</a> 发布与
+                                        <a href="#" title="View all posts in Creative" rel="category tag">{{ post.category }}</a>
                                     </div>
                                 </header>
                                 <div class="entry-content">
-                                    <div class="entry-photo"><img src="/static/images/user_images/posts/post-1-534x249.jpg" alt="" /></div>
+                                    {% if post.image %}
+                                      <div class="entry-photo"><img src="/static/images/user_images/posts/post-1-534x249.jpg" alt="" /></div>
+                                    {% endif %}
                                     <div class="clearfix">
                                         <div class="entry-data">
-                                            <span class="month">Dec</span>
-                                            <span class="day">16</span>
-                                            <a href="#" class="comments-link"><i class="comments-icon"></i>0</a>
+                                            <span class="month">{{ post.publish|date:'m' }}</span>
+                                            <span class="day">{{ post.publish|date:'d' }}</span>
+                                            <a href="#" class="comments-link"><i class="comments-icon"></i>{{ post.comments.count }}</a>
                                         </div>
                                         <div class="entry-text">
-                                            <div><p>Perspiciatis unde omnis iste
-                                                natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                                                aperiam, eaque ipsa quae. Ab illo inventore veritatis et quasi
-                                                architecto beatae vitae dicta.Sunt explicabo. Nemo enim ipsam voluptatem
-                                                quia voluptas sit aspernatur. Odit aut fugit, sed quia consequuntur
-                                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                                quisquam est, qui […]</p>
+                                            <div><p>{{ post.body|truncatewords:40 }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <footer><a class="entry-more btn" href="blog-post.html">Read More</a></footer>
+                                <footer><a class="entry-more btn" href="{% url 'blog:blog_detail' post.slug %}">阅读全文</a></footer>
                             </article>
-
-                            <article class="entry-box">
-                                <header class="entry-header">
-                                    <h2 class="post-title"><a href="blog-post.html">Text Post Format</a></h2>
-                                    <div class="post-info">
-                                        Posted by <a href="#" title="Posts by admin" rel="author">admin</a> in
-                                        <a href="#" title="View all posts in Text Only" rel="category tag">Text Only</a>
-                                    </div>
-                                </header>
-                                <div class="entry-content">
-                                    <div class="clearfix">
-                                        <div class="entry-data">
-                                            <span class="month">Dec</span>
-                                            <span class="day">16</span>
-                                            <a href="#" class="comments-link"><i class="comments-icon"></i>0</a>
-                                        </div>
-                                        <div class="entry-text">
-                                            <div><p>Perspiciatis unde omnis iste
-                                                natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                                                aperiam, eaque ipsa quae. Ab illo inventore veritatis et quasi
-                                                architecto beatae vitae dicta.Sunt explicabo. Nemo enim ipsam voluptatem
-                                                quia voluptas sit aspernatur. Odit aut fugit, sed quia consequuntur
-                                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                                quisquam est, qui […]</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer><a class="entry-more btn" href="blog-post.html">Read More</a></footer>
-                            </article>
-
-                            <article class="entry-box">
-                                <header class="entry-header">
-                                    <h2 class="post-title"><a href="blog-post.html">Gallery Post</a></h2>
-                                    <div class="post-info">
-                                        Posted by <a href="#" title="Posts by admin" rel="author">admin</a> in
-                                        <a href="#" title="View all posts in Creative" rel="category tag">Creative</a>,
-                                        <a href="#" title="View all posts in My Posts" rel="category tag">My Posts</a>,
-                                        <a href="#" title="View all posts in Text Only" rel="category tag">Text Only</a>
-                                    </div>
-                                </header>
-                                <div class="entry-content">
-                                    <div class="entry-photo">
-                                        <div class="container">
-                                            <div id="slides" class="slides">
-                                                <img src="/static/images/user_images/posts/31-534x249.jpg" alt="" />
-                                                <img src="/static/images/user_images/posts/11-534x249.jpg" alt="" />
-                                                <img src="/static/images/user_images/posts/51-534x249.jpg" alt="" />
-                                            </div>
-                                        </div>
-                                        <script type="text/javascript">
-                                            $(function(){
-                                                $('#slides').slidesjs({
-                                                    pagination: {active: false},
-                                                    navigation: {active: true},
-                                                    width: 534,
-                                                    height: 248
-                                                });
-                                            });
-                                        </script>
-                                    </div>
-                                    <div class="clearfix">
-                                        <div class="entry-data">
-                                            <span class="month">Dec</span>
-                                            <span class="day">14</span>
-                                            <a href="#" class="comments-link"><i class="comments-icon"></i>0</a>
-                                        </div>
-                                        <div class="entry-text">
-                                            <div><p>Perspiciatis unde omnis iste
-                                                natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                                                aperiam, eaque ipsa quae. Ab illo inventore veritatis et quasi
-                                                architecto beatae vitae dicta.Sunt explicabo. Nemo enim ipsam voluptatem
-                                                quia voluptas sit aspernatur. Odit aut fugit, sed quia consequuntur
-                                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                                quisquam est, qui […]</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer><a class="entry-more btn" href="blog-post.html">Read More</a></footer>
-                            </article>
-
-                            <article class="entry-box">
-                                <header class="entry-header">
-                                    <h2 class="post-title"><a href="blog-post.html">Audio Post Format</a></h2>
-                                    <div class="post-info">
-                                        Posted by <a href="#" title="Posts by admin" rel="author">admin</a> in
-                                        <a href="#" title="View all posts in Audio" rel="category tag">Audio</a>
-                                    </div>
-                                </header>
-                                <div class="entry-content">
-                                    <div class="entry-photo">
-                                        <audio id="player2" style="width:100%;" src="/static/images/user_images/media/AirReview-Landmarks-02-ChasingCorporate.mp3" data-type="audio/mp3" controls="controls"></audio>
-                                    </div>
-                                    <div class="clearfix">
-                                        <div class="entry-data">
-                                            <span class="month">Dec</span>
-                                            <span class="day">14</span>
-                                            <a href="#" class="comments-link"><i class="comments-icon"></i>0</a>
-                                        </div>
-                                        <div class="entry-text">
-                                            <div><p>Perspiciatis unde omnis iste
-                                                natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                                                aperiam, eaque ipsa quae. Ab illo inventore veritatis et quasi
-                                                architecto beatae vitae dicta.Sunt explicabo. Nemo enim ipsam voluptatem
-                                                quia voluptas sit aspernatur. Odit aut fugit, sed quia consequuntur
-                                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                                quisquam est, qui […]</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer><a class="entry-more btn" href="blog-post.html">Read More</a></footer>
-                            </article>
-
-                            <article class="entry-box">
-                                <header class="entry-header">
-                                    <h2 class="post-title"><a href="blog-post.html">Video Post</a></h2>
-                                    <div class="post-info">
-                                        Posted by <a href="#" title="Posts by admin" rel="author">admin</a> in
-                                        <a href="#" title="View all posts in Video" rel="category tag">Video</a>
-                                    </div>
-                                </header>
-                                <div class="entry-content">
-                                    <div class="entry-photo">
-                                        <object style="width:100%;" height="281" type="video/x-ms-asf" data="moogaloop.html">
-                                            <param name="allowfullscreen" value="true" />
-                                            <param name="allowscriptaccess" value="always" />
-                                            <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=5367093&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00adef&amp;fullscreen=" />
-                                            <embed src="http://vimeo.com/moogaloop.swf?clip_id=5367093&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00adef&amp;fullscreen=1"
-                                                   type="application/x-shockwave-flash"
-                                                   allowfullscreen="true"
-                                                   allowscriptaccess="always"
-                                                   style="width:100%;"
-                                                   height="281">
-                                        </object>
-                                    </div>
-                                    <div class="clearfix">
-                                        <div class="entry-data">
-                                            <span class="month">Nov</span>
-                                            <span class="day">14</span>
-                                            <a href="#" class="comments-link"><i class="comments-icon"></i>0</a>
-                                        </div>
-                                        <div class="entry-text">
-                                            <div><p>Perspiciatis unde omnis iste
-                                                natus error sit voluptatem accusantium doloremque laudantium, totam rem
-                                                aperiam, eaque ipsa quae. Ab illo inventore veritatis et quasi
-                                                architecto beatae vitae dicta.Sunt explicabo. Nemo enim ipsam voluptatem
-                                                quia voluptas sit aspernatur. Odit aut fugit, sed quia consequuntur
-                                                magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                                quisquam est, qui […]</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <footer><a class="entry-more btn" href="blog-post.html">Read More</a></footer>
-                            </article>
-
+                            {% endfor %}
                             <div id="pageination" class="clearfix">
                                 <ul class="page-numbers">
                                     <li><span class="page-numbers current">1</span></li>
