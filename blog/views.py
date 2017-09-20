@@ -11,7 +11,12 @@ def blog_list(request):
     return render(request, 'blog-list.html', {'posts': posts})
 
 
-def blog_detail(request, slug):
+def blog_detail(request, year, month, day, slug):
     """博客日志详情页"""
-    post = get_object_or_404(Post, slug=slug)
+    post = get_object_or_404(Post,
+                             slug=slug,
+                             publish__year=year,
+                             publish__month=month,
+                             publish__day=day,
+                             status='published')
     return render(request, 'blog-detail.html', {'post': post})

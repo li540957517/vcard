@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Category, Post, Comment
+from tinymce.widgets import TinyMCE
 
 
 # Register your models here.
@@ -16,6 +17,13 @@ class PostAdmin(admin.ModelAdmin):
     date_hierarchy = 'publish'
     list_filter = ('category', 'status', 'publish')
     list_per_page = 20
+
+    class Media:
+        js = (
+            '/static/js/tinymce/tinymce.min.js',
+            '/static/js/tinymce/jquery.tinymce.min.js',
+            '/static/js/tinymce/textareas.js'
+        )
 
 
 class CommentAdmin(admin.ModelAdmin):

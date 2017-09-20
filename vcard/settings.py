@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tinymce',
     'guestbook',
     'blog',
 ]
@@ -123,4 +124,6 @@ STATICFILES_DIRS = [
 ]
 
 # 自定义媒体根目录
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+

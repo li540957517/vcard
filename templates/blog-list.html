@@ -3,114 +3,121 @@
     博客日志列表
 {% endblock %}
 {% block content %}
-                <section id="profile" class="item">
-                    <h2 class="item-title"><a href="/"><span class="title">个人资料</span><span class="icon-user"></span></a></h2>
-                    <div class="item-border"><span></span></div>
-                </section><!-- /#profile -->
+    <section id="profile" class="item">
+        <h2 class="item-title"><a href="/"><span class="title">个人资料</span><span class="icon-user"></span></a></h2>
+        <div class="item-border"><span></span></div>
+    </section><!-- /#profile -->
 
-                <section id="blog" class="item">
-                    <h2 class="item-title"><a href="#"><span class="title">日志列表</span> <span class="icon-blog"></span></a></h2>
+    <section id="blog" class="item">
+        <h2 class="item-title"><a href="#"><span class="title">日志列表</span> <span class="icon-blog"></span></a></h2>
 
-                    <div class="item-cont clearfix">
+        <div class="item-cont clearfix">
 
-                        <div class="col535 fl-left">
-                            {% for post in posts %}
-                            <article class="entry-box">
-                                <header class="entry-header">
-                                    <h2 class="post-title"><a href="{% url 'blog:blog_detail' post.slug %}">{{ post.title }}</a></h2>
-                                    <div class="post-info">
-                                        由 <a href="#" title="Posts by admin" rel="author">{{ post.author.username }}</a> 发布与
-                                        <a href="#" title="View all posts in Creative" rel="category tag">{{ post.category }}</a>
-                                    </div>
-                                </header>
-                                <div class="entry-content">
-                                    {% if post.image %}
-                                      <div class="entry-photo"><img src="/static/images/user_images/posts/post-1-534x249.jpg" alt="" /></div>
-                                    {% endif %}
-                                    <div class="clearfix">
-                                        <div class="entry-data">
-                                            <span class="month">{{ post.publish|date:'m' }}</span>
-                                            <span class="day">{{ post.publish|date:'d' }}</span>
-                                            <a href="#" class="comments-link"><i class="comments-icon"></i>{{ post.comments.count }}</a>
-                                        </div>
-                                        <div class="entry-text">
-                                            <div><p>{{ post.body|truncatewords:40 }}</p>
-                                            </div>
-                                        </div>
+            <div class="col535 fl-left">
+                {% for post in posts %}
+                    <article class="entry-box">
+                        <header class="entry-header">
+                            <h2 class="post-title"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                            <div class="post-info">
+                                由 <a href="#" title="Posts by admin" rel="author">{{ post.author.username }}</a> 发布与
+                                <a href="#" title="View all posts in Creative"
+                                   rel="category tag">{{ post.category }}</a>
+                            </div>
+                        </header>
+                        <div class="entry-content">
+                            {% if post.image %}
+                                <div class="entry-photo"><img src="/media/{{ post.image }}"
+                                                              alt="{{ post.title }}"></div>
+                            {% endif %}
+                            <div class="clearfix">
+                                <div class="entry-data">
+                                    <span class="month">{{ post.publish|date:'m' }}</span>
+                                    <span class="day">{{ post.publish|date:'d' }}</span>
+                                    <a href="#" class="comments-link"><i
+                                            class="comments-icon"></i>{{ post.comments.count }}</a>
+                                </div>
+                                <div class="entry-text">
+                                    <div><p>{{ post.body|truncatewords:40 }}</p>
                                     </div>
                                 </div>
-                                <footer><a class="entry-more btn" href="{% url 'blog:blog_detail' post.slug %}">阅读全文</a></footer>
-                            </article>
-                            {% endfor %}
-                            <div id="pageination" class="clearfix">
-                                <ul class="page-numbers">
-                                    <li><span class="page-numbers current">1</span></li>
-                                    <li><a class="page-numbers" href="#">2</a></li>
-                                </ul>
                             </div>
                         </div>
+                        <footer><a class="entry-more btn" href="{{ post.get_absolute_url }}">阅读全文</a></footer>
+                    </article>
+                {% endfor %}
+                <div id="pageination" class="clearfix">
+                    <ul class="page-numbers">
+                        <li><span class="page-numbers current">1</span></li>
+                        <li><a class="page-numbers" href="#">2</a></li>
+                    </ul>
+                </div>
+            </div>
 
-                        <div class="col230 fl-right">
-                            <aside id="sidebar">
-                                <div class="widget">
-                                    <h2>Categories</h2>
-                                    <ul>
-                                        <li><a href="#" title="View all posts filed under Audio">Audio</a></li>
-                                        <li><a href="#" title="View all posts filed under Creative">Creative</a></li>
-                                        <li><a href="#" title="View all posts filed under My Posts">My Posts</a></li>
-                                        <li><a href="#" title="View all posts filed under Text Only">Text Only</a></li>
-                                        <li><a href="#" title="View all posts filed under Video">Video</a></li>
-                                    </ul>
-                                </div>
+            <div class="col230 fl-right">
+                <aside id="sidebar">
+                    <div class="widget">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="#" title="View all posts filed under Audio">Audio</a></li>
+                            <li><a href="#" title="View all posts filed under Creative">Creative</a></li>
+                            <li><a href="#" title="View all posts filed under My Posts">My Posts</a></li>
+                            <li><a href="#" title="View all posts filed under Text Only">Text Only</a></li>
+                            <li><a href="#" title="View all posts filed under Video">Video</a></li>
+                        </ul>
+                    </div>
 
-                                <div class="widget">
-                                    <h2>Recent Posts</h2>
-                                    <ul>
-                                        <li><a href="#">Image Post Format</a></li>
-                                        <li><a href="#">Text Post Format</a></li>
-                                        <li><a href="#">Gallery Post</a></li>
-                                        <li><a href="#">Audio Post Format</a></li>
-                                        <li><a href="#">Video Post</a></li>
-                                    </ul>
-                                </div>
+                    <div class="widget">
+                        <h2>Recent Posts</h2>
+                        <ul>
+                            <li><a href="#">Image Post Format</a></li>
+                            <li><a href="#">Text Post Format</a></li>
+                            <li><a href="#">Gallery Post</a></li>
+                            <li><a href="#">Audio Post Format</a></li>
+                            <li><a href="#">Video Post</a></li>
+                        </ul>
+                    </div>
 
-                                <div class="widget">
-                                    <h2>Tags</h2>
-                                    <div class="tagcloud">
-                                        <a href="#" title="audio">audio</a>
-                                        <a href="#" title="creative">creative</a>
-                                        <a href="#" title="gallery">gallery</a>
-                                        <a href="#" title="image">image</a>
-                                        <a href="#" title="news">news</a>
-                                        <a href="#" title="photography">photography</a>
-                                        <a href="#" title="popular">popular</a>
-                                        <a href="#" title="text">text</a>
-                                        <a href="#" title="vimeo">vimeo</a>
-                                        <a href="#" title="youtube">youtube</a>
-                                    </div>
-                                </div>
-
-                                <div class="widget">
-                                    <h2>Archives</h2>
-                                    <ul>
-                                        <li><a href="#">December 2013</a></li>
-                                        <li><a href="#">November 2013</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="widget">
-                                    <h2>Meta</h2>
-                                    <ul>
-                                        <li><a href="#">Log in</a></li>
-                                        <li><a href="#" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-                                        <li><a href="#" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-                                        <li><a href="#" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
-                                    </ul>
-                                </div>
-                            </aside>
+                    <div class="widget">
+                        <h2>Tags</h2>
+                        <div class="tagcloud">
+                            <a href="#" title="audio">audio</a>
+                            <a href="#" title="creative">creative</a>
+                            <a href="#" title="gallery">gallery</a>
+                            <a href="#" title="image">image</a>
+                            <a href="#" title="news">news</a>
+                            <a href="#" title="photography">photography</a>
+                            <a href="#" title="popular">popular</a>
+                            <a href="#" title="text">text</a>
+                            <a href="#" title="vimeo">vimeo</a>
+                            <a href="#" title="youtube">youtube</a>
                         </div>
-                    </div><!-- /.item-cont -->
+                    </div>
 
-                    <div class="item-border"><span></span></div>
-                </section><!-- /#blog -->
+                    <div class="widget">
+                        <h2>Archives</h2>
+                        <ul>
+                            <li><a href="#">December 2013</a></li>
+                            <li><a href="#">November 2013</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="widget">
+                        <h2>Meta</h2>
+                        <ul>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#" title="Syndicate this site using RSS 2.0">Entries <abbr
+                                    title="Really Simple Syndication">RSS</abbr></a></li>
+                            <li><a href="#" title="The latest comments to all posts in RSS">Comments <abbr
+                                    title="Really Simple Syndication">RSS</abbr></a></li>
+                            <li><a href="#"
+                                   title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div><!-- /.item-cont -->
+
+        <div class="item-border"><span></span></div>
+    </section><!-- /#blog -->
 {% endblock %}

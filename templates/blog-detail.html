@@ -4,7 +4,7 @@
 {% endblock %}
 {% block content %}
     <section id="profile" class="item">
-        <h2 class="item-title"><a href="index-2.html"><span class="title">个人资料</span><span class="icon-user"></span></a>
+        <h2 class="item-title"><a href="/"><span class="title">个人资料</span><span class="icon-user"></span></a>
         </h2>
         <div class="item-border"><span></span></div>
     </section><!-- /#profile -->
@@ -23,7 +23,7 @@
 
                 <div class="post-cont wp-cont">
                     {% if post.image %}
-                        <div class="entry-photo"><img src="/static/images/user_images/posts/post-1-534x249.jpg" alt=""/>
+                        <div class="entry-photo"><img src="/media/{{ post.image }}" alt="{{ post.title }}">
                         </div>
                     {% endif %}
                     {{ post.body }}

@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import User
+from django.shortcuts import reverse
+from tinymce.models import HTMLField
 
 
 # Create your models here.
@@ -35,20 +37,30 @@ class Post(models.Model):
     category = models.ForeignKey(Category, related_name='blog_posts')
     author = models.ForeignKey(User, related_name='blog_posts')
     image = models.ImageField('图片', null=True, blank=True, upload_to='uploads')
-    body = models.TextField('正文')
+    # body = models.TextField('正文')
+    body = HTMLField('正文')
     publish = models.DateTimeField('发布时间', default=timezone.now)
     created = models.DateTimeField('创建时间', auto_now_add=True)
     update = models.DateTimeField('更新时间', auto_now=True)
     status = models.CharField('发布状态', max_length=50, choices=STATUS_CHOICE, default='draft')
 
     objects = models.Manager()
-    published =PostPublishedManager()
+    published = PostPublishedManager()
 
     def __str__(self):
         return self.title
 
     class Meta:
         ordering = ['-publish', ]
+
+    def get_absolute_url(self):
+        """获取反向解析当前实例的URL"""
+        return reverse('blog:blog_detail', args=[
+            self.publish.year,
+            self.publish.month,
+            self.publish.day,
+            self.slug,
+        ])
 
 
 class Comment(models.Model):
