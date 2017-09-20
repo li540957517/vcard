@@ -26,7 +26,8 @@
                         <div class="entry-photo"><img src="/media/{{ post.image }}" alt="{{ post.title }}">
                         </div>
                     {% endif %}
-                    {{ post.body }}
+                    {{ post.body|safe }}
+{#                {% autoescape off %}{{ post.body }} {% endautoescape %}#}
                 </div>
 
                 <div class="post-bottom clearfix">

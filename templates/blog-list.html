@@ -37,7 +37,7 @@
                                             class="comments-icon"></i>{{ post.comments.count }}</a>
                                 </div>
                                 <div class="entry-text">
-                                    <div><p>{{ post.body|truncatewords:40 }}</p>
+                                    <div><p>{{ post.body|truncatewords:40|safe }}</p>
                                     </div>
                                 </div>
                             </div>
