@@ -18,12 +18,11 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ('category', 'status', 'publish')
     list_per_page = 20
 
-    class Media:
-        js = (
-            '/static/js/tinymce/tinymce.min.js',
-            '/static/js/tinymce/jquery.tinymce.min.js',
-            '/static/js/tinymce/textareas.js'
-        )
+    # class Media:
+    #     js = (
+    #         'https://cloud.tinymce.com/stable/tinymce.min.js',
+    #         '/static/js/tinymce/textareas.js'
+    #     )
 
 
 class CommentAdmin(admin.ModelAdmin):
