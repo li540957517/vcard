@@ -1,0 +1,8 @@
+<div class="widget">
+    <h2>最新日志</h2>
+    <ul>
+        {% for item in latest_posts %}
+            <li><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load blog_tags %}
 {% block title %}
     {{ post.title }}
 {% endblock %}
@@ -27,7 +28,7 @@
                         </div>
                     {% endif %}
                     {{ post.body|safe }}
-{#                {% autoescape off %}{{ post.body }} {% endautoescape %}#}
+                    {#                {% autoescape off %}{{ post.body }} {% endautoescape %}#}
                 </div>
 
                 <div class="post-bottom clearfix">
@@ -77,27 +78,16 @@
             <div class="col230 fl-right">
                 <aside id="sidebar">
                     <div class="widget">
-                        <h2>Categories</h2>
+                        <h2>日志分类 {% total_posts %}</h2>
+                        {% get_all_categories as categories %}
                         <ul>
-                            <li><a href="#" title="View all posts filed under Audio">Audio</a></li>
-                            <li><a href="#" title="View all posts filed under Creative">Creative</a></li>
-                            <li><a href="#" title="View all posts filed under My Posts">My Posts</a></li>
-                            <li><a href="#" title="View all posts filed under Text Only">Text Only</a></li>
-                            <li><a href="#" title="View all posts filed under Video">Video</a></li>
+                            {% for c in categories %}
+                                <li><a href="{% url 'blog:blog_list' %}?cat={{ c.slug }}"
+                                       title="View all posts filed under Audio">{{ c.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
-
-                    <div class="widget">
-                        <h2>Recent Posts</h2>
-                        <ul>
-                            <li><a href="#">Image Post Format</a></li>
-                            <li><a href="#">Text Post Format</a></li>
-                            <li><a href="#">Gallery Post</a></li>
-                            <li><a href="#">Audio Post Format</a></li>
-                            <li><a href="#">Video Post</a></li>
-                        </ul>
-                    </div>
-
+                    {% show_latest_posts %}
                     <div class="widget">
                         <h2>Tags</h2>
                         <div class="tagcloud">

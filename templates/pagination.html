@@ -1,0 +1,20 @@
+<div id="pageination" class="clearfix">
+    <ul class="page-numbers">
+        {% if posts.has_previous %}
+            <li><a class="page-numbers" href="?page={{ posts.previous_page_number }}">上页</a></li>
+        {% endif %}
+        {% for i in paginator.page_range %}
+            {% if i == posts.number %}
+                <li><span class="page-numbers current">{{ i }}</span></li>
+            {% else %}
+                <li><a class="page-numbers" href="?page={{ i }}">{{ i }}</a></li>
+            {% endif %}
+        {% endfor %}
+
+        {#                        <li><span class="page-numbers current">1</span></li>#}
+        {#                        <li><a class="page-numbers" href="#">2</a></li>#}
+        {% if posts.has_next %}
+            <li><a class="page-numbers" href="?page={{ posts.next_page_number }}">下页</a></li>
+        {% endif %}
+    </ul>
+</div>
