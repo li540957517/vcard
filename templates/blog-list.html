@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load blog_tags %}
 {% block title %}
     博客日志列表
 {% endblock %}
@@ -37,7 +38,7 @@
                                             class="comments-icon"></i>{{ post.comments.count }}</a>
                                 </div>
                                 <div class="entry-text">
-                                    <div><p>{{ post.body|truncatewords:40|safe }}</p>
+                                    <div><p>{{ post.body|striptags|truncatewords:20 }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,38 +46,22 @@
                         <footer><a class="entry-more btn" href="{{ post.get_absolute_url }}">阅读全文</a></footer>
                     </article>
                 {% endfor %}
-                <div id="pageination" class="clearfix">
-                    <ul class="page-numbers">
-                        <li><span class="page-numbers current">1</span></li>
-                        <li><a class="page-numbers" href="#">2</a></li>
-                    </ul>
-                </div>
+                {% include 'pagination.html' %}
             </div>
 
             <div class="col230 fl-right">
                 <aside id="sidebar">
-                    <div class="widget">
-                        <h2>Categories</h2>
+                     <div class="widget">
+                        <h2>日志分类 {% total_posts %}</h2>
+                        {% get_all_categories as categories %}
                         <ul>
-                            <li><a href="#" title="View all posts filed under Audio">Audio</a></li>
-                            <li><a href="#" title="View all posts filed under Creative">Creative</a></li>
-                            <li><a href="#" title="View all posts filed under My Posts">My Posts</a></li>
-                            <li><a href="#" title="View all posts filed under Text Only">Text Only</a></li>
-                            <li><a href="#" title="View all posts filed under Video">Video</a></li>
+                            {% for c in categories %}
+                                <li><a href="{% url 'blog:blog_list' %}?cat={{ c.slug }}"
+                                       title="View all posts filed under Audio">{{ c.name }}</a></li>
+                            {% endfor %}
                         </ul>
                     </div>
-
-                    <div class="widget">
-                        <h2>Recent Posts</h2>
-                        <ul>
-                            <li><a href="#">Image Post Format</a></li>
-                            <li><a href="#">Text Post Format</a></li>
-                            <li><a href="#">Gallery Post</a></li>
-                            <li><a href="#">Audio Post Format</a></li>
-                            <li><a href="#">Video Post</a></li>
-                        </ul>
-                    </div>
-
+                    {% show_latest_posts 3 %}
                     <div class="widget">
                         <h2>Tags</h2>
                         <div class="tagcloud">
