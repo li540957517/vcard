@@ -11,7 +11,8 @@ def blog_list(request):
     # posts = Post.objects.filter(status='published')
     # posts = Post.published.all()
     # return render(request, 'blog-list.html', {'posts': posts})
-    object_list = Post.published.all()
+    cat = request.GET.get('cat', '')
+    object_list = Post.published.all().filter(category__name__contains=cat).order_by('-publish')
     paginator = Paginator(object_list, 3)
     page = request.GET.get('page')
     try:
@@ -36,4 +37,4 @@ def blog_detail(request, year, month, day, slug):
     post_tags_ids = post.tags.values_list('id', flat=True)
     similar_posts = Post.published.filter(tags__in=post_tags_ids).exclude(id=post.id)
     similar_posts = similar_posts.annotate(same_tags=Count('tags')).order_by('-same_tags', '-publish')[:4]
-    return render(request, 'blog-detail.html', {'post': post,'similar_posts':similar_posts})
+    return render(request, 'blog-detail.html', {'post': post, 'similar_posts': similar_posts})

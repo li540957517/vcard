@@ -63,18 +63,13 @@
                     </div>
                     {% show_latest_posts 3 %}
                     <div class="widget">
-                        <h2>Tags</h2>
+                        <h2>标签云集</h2>
+                        {% get_all_tags as all_tags %}
                         <div class="tagcloud">
-                            <a href="#" title="audio">audio</a>
-                            <a href="#" title="creative">creative</a>
-                            <a href="#" title="gallery">gallery</a>
-                            <a href="#" title="image">image</a>
-                            <a href="#" title="news">news</a>
-                            <a href="#" title="photography">photography</a>
-                            <a href="#" title="popular">popular</a>
-                            <a href="#" title="text">text</a>
-                            <a href="#" title="vimeo">vimeo</a>
-                            <a href="#" title="youtube">youtube</a>
+                            {% for tag in all_tags %}
+{#                                <a href="{% url 'blog:blog_list' %}?cat={{ tag }}" title="">{{ tag }}</a>#}
+                                <a href="#" title="">{{ tag }}</a>
+                            {% endfor %}
                         </div>
                     </div>
 
