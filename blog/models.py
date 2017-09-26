@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from django.shortcuts import reverse
 from tinymce.models import HTMLField
+from taggit.managers import TaggableManager
 
 
 # Create your models here.
@@ -46,6 +47,8 @@ class Post(models.Model):
 
     objects = models.Manager()
     published = PostPublishedManager()
+
+    tags = TaggableManager()
 
     def __str__(self):
         return self.title

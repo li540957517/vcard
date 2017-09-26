@@ -32,7 +32,11 @@
                 </div>
 
                 <div class="post-bottom clearfix">
-                    <div class="post-tags"><span>Tags:</span> <a href="#">news</a> <a href="#">creative</a></div>
+                    <div class="post-tags"><span>标签:</span>
+                        {% for tag in post.tags.all %}
+                            <a href="#">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
                     <div class="post-share">
                         <span>Share:</span>
                         <a target="_blank" href="http://twitter.com/" class="share-tw" title="Twitter">&nbsp;</a>
@@ -89,18 +93,20 @@
                     </div>
                     {% show_latest_posts %}
                     <div class="widget">
-                        <h2>Tags</h2>
+                        <h2>相关日志</h2>
+                        <ul>
+                            {% for item in similar_posts %}
+                                <li><a href="{{ item.get_absolute_url }}">{{ item.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h2>标签云集</h2>
+                        {% get_all_tags as all_tags %}
                         <div class="tagcloud">
-                            <a href="#" title="audio">audio</a>
-                            <a href="#" title="creative">creative</a>
-                            <a href="#" title="gallery">gallery</a>
-                            <a href="#" title="image">image</a>
-                            <a href="#" title="news">news</a>
-                            <a href="#" title="photography">photography</a>
-                            <a href="#" title="popular">popular</a>
-                            <a href="#" title="text">text</a>
-                            <a href="#" title="vimeo">vimeo</a>
-                            <a href="#" title="youtube">youtube</a>
+                            {% for tag in all_tags %}
+                                <a href="#" title="">{{ tag }}</a>
+                            {% endfor %}
                         </div>
                     </div>
 
