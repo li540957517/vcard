@@ -12,7 +12,7 @@ def blog_list(request):
     # posts = Post.published.all()
     # return render(request, 'blog-list.html', {'posts': posts})
     cat = request.GET.get('cat', '')
-    object_list = Post.published.all().filter(category__name__contains=cat).order_by('-publish')
+    object_list = Post.published.all().filter(category__slug__contains=cat).order_by('-publish')
     paginator = Paginator(object_list, 3)
     page = request.GET.get('page')
     try:
